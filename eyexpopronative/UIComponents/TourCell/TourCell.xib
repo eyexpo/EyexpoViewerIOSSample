@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TourCell" customModule="eyexpopronative" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-uh-CnW" customClass="GVRPanoramaView">
+                    <rect key="frame" x="8" y="8" width="421" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="d96-Zu-j5c">
+                    <rect key="frame" x="200.5" y="54" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="d96-Zu-j5c" secondAttribute="height" multiplier="1:1" id="ckR-Rt-Yes"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-N1-nC6" userLabel="tapContainer">
+                    <rect key="frame" x="8" y="8" width="421" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="Tz1-Ca-hEn"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tOE-VG-xXW">
+                    <rect key="frame" x="8" y="8" width="421" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVB-rb-BAW" userLabel="Title">
+                    <rect key="frame" x="379" y="107.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fwp-uh-CnW" firstAttribute="width" secondItem="tOE-VG-xXW" secondAttribute="width" id="1FI-kJ-cEI"/>
+                <constraint firstItem="cVB-rb-BAW" firstAttribute="bottom" secondItem="tOE-VG-xXW" secondAttribute="bottom" constant="-8" id="4DN-gi-bTe"/>
+                <constraint firstItem="d96-Zu-j5c" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.25" id="7vB-2G-j3g"/>
+                <constraint firstItem="tOE-VG-xXW" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="-16" id="CL6-xJ-Y3V"/>
+                <constraint firstItem="6Tr-N1-nC6" firstAttribute="width" secondItem="tOE-VG-xXW" secondAttribute="width" id="HuC-FB-qoa"/>
+                <constraint firstItem="fwp-uh-CnW" firstAttribute="centerX" secondItem="tOE-VG-xXW" secondAttribute="centerX" id="I9X-NY-hCt"/>
+                <constraint firstItem="6Tr-N1-nC6" firstAttribute="centerX" secondItem="tOE-VG-xXW" secondAttribute="centerX" id="J6Z-Rl-lHM"/>
+                <constraint firstItem="6Tr-N1-nC6" firstAttribute="centerY" secondItem="tOE-VG-xXW" secondAttribute="centerY" id="NPa-ft-dFB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tOE-VG-xXW" secondAttribute="trailing" constant="8" id="P2e-io-jd5"/>
+                <constraint firstItem="fwp-uh-CnW" firstAttribute="centerY" secondItem="tOE-VG-xXW" secondAttribute="centerY" id="R3H-0Y-l2R"/>
+                <constraint firstItem="d96-Zu-j5c" firstAttribute="centerX" secondItem="tOE-VG-xXW" secondAttribute="centerX" id="VbQ-R4-x12"/>
+                <constraint firstItem="tOE-VG-xXW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="heS-AK-EPm"/>
+                <constraint firstItem="d96-Zu-j5c" firstAttribute="centerY" secondItem="tOE-VG-xXW" secondAttribute="centerY" id="jfl-e0-zak"/>
+                <constraint firstItem="fwp-uh-CnW" firstAttribute="height" secondItem="tOE-VG-xXW" secondAttribute="height" id="nS8-l3-LDb"/>
+                <constraint firstItem="cVB-rb-BAW" firstAttribute="trailing" secondItem="tOE-VG-xXW" secondAttribute="trailing" constant="-8" id="ngg-lI-Eyu"/>
+                <constraint firstItem="tOE-VG-xXW" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="ns7-R2-M5S"/>
+                <constraint firstItem="6Tr-N1-nC6" firstAttribute="height" secondItem="tOE-VG-xXW" secondAttribute="height" id="szA-dS-OMb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="panoView" destination="fwp-uh-CnW" id="NUd-HI-0vE"/>
+                <outlet property="tapContainer" destination="6Tr-N1-nC6" id="YoZ-fb-m2k"/>
+                <outlet property="thumbView" destination="tOE-VG-xXW" id="kis-Lh-JNZ"/>
+                <outlet property="title" destination="cVB-rb-BAW" id="7oR-pR-jOJ"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="-76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play" width="48" height="48"/>
+    </resources>
+</document>
