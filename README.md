@@ -9,7 +9,7 @@ The app utilizes our current open api documented over [here](https://stage.eyexp
 
 The iOS implementation for most of the network calls can be seen over at [NetworkManager.swift](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/NetworkManager.swift)
 
-The API `getPublicTours` will return `Tour` json model that can be seend over at [here.](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/Model/Tour.swift)
+The API `getPublicTours` will return `Tour` json model that can be send over at [here.](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/Model/Tour.swift)
 `cover_img_thumbnail` contains the image URL to display the cover image.
 `public_url` is the URL for the the virtual tour.
 
