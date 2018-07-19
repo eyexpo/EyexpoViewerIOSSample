@@ -11,11 +11,11 @@ Download and run `pod install` and open `eyexpopronative.xcworkspace` with your 
 
 ## Under the hood
 
-The app utilizes our current open api documented over [here](https://stage.eyexpo.com/api/documentation)
+The app utilizes our EyexpoPro [API](https://stage.eyexpo.com/api/documentation)
 
 The iOS implementation for most of the network calls can be seen over at [NetworkManager.swift](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/NetworkManager.swift)
 
-The API `getPublicTours` will return `Tour` json model that can be send over at [here.](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/Model/Tour.swift)
+The API `getPublicTours` will return `Tour` [json](https://github.com/eyexpo/EyexpoViewerIOSSample/blob/master/eyexpopronative/Model/Tour.swift) response.
 `cover_img_thumbnail` contains the image URL to display the cover image.
 `public_url` is the URL for the the virtual tour.
 
@@ -23,4 +23,5 @@ The native viewer for the iOS for the virtual tour is using Apple's `WKWebView`,
 
 To view a single 360 image we recommend using the [GVRSDK](https://github.com/googlevr/gvr-ios-sdk)
 
-If you have any questions you can email to us at [developers@eyexpo.co](developers@eyexpo.co)
+If you have any questions you can email to us at [developers@eyexpo.co](mailto:developers@eyexpo.co)
+
